@@ -18,7 +18,8 @@ permissions:
 
 jobs:
   build-preview:
-    runs-on: ubuntu-latest
+    # The locked native Ruby gems require the Ubuntu 24.04 toolchain.
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Debug dump
