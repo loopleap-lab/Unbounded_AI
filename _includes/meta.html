@@ -27,18 +27,19 @@
   {%- endcapture %}
 {% endif %}
 {% capture url -%}
-  {{ site.url }}{{ site.baseurl }}
+  {{ page.url | absolute_url }}
 {%- endcapture %}
 
 {% assign description = description | xml_escape %}
 
+{% assign svg = "images/icon.svg" | file_exists %}
 {% assign png = "images/icon.png" | file_exists %}
 {% assign jpg = "images/icon.jpg" | file_exists %}
-{% assign icon = png | default: jpg | relative_url %}
+{% assign icon = svg | default: png | default: jpg | absolute_url %}
 
 {% assign jpg = "images/share.jpg" | file_exists %}
 {% assign png = "images/share.png" | file_exists %}
-{% assign share = jpg | default: png | relative_url %}
+{% assign share = png | default: jpg | absolute_url %}
 
 {% assign published = page.date | date_to_xmlschema %}
 {% assign updated = page.last_modified_at | date_to_xmlschema %}
@@ -51,17 +52,17 @@
 
 <link rel="icon" href="{{ icon }}">
 
-<meta name="title" content="{{ title }}">
+<meta name="title" content="{{ fulltitle }}">
 <meta name="description" content="{{ description }}">
 
-<meta property="og:title" content="{{ title }}">
-<meta property="og:site_title" content="{{ site.title | xml_escape }}">
+<meta property="og:title" content="{{ fulltitle }}">
+<meta property="og:site_name" content="{{ site.title | xml_escape }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:url" content="{{ url }}">
 <meta property="og:image" content="{{ share }}">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="{{ title }}">
+<meta property="twitter:title" content="{{ fulltitle }}">
 <meta property="twitter:description" content="{{ description }}">
 <meta property="twitter:url" content="{{ url }}">
 <meta property="twitter:card" content="summary_large_image">
@@ -89,9 +90,9 @@
     {% else %}
       "@type": "WebSite",
     {% endif %}
-    "name": "{{ title }}",
+    "name": "{{ fulltitle }}",
     "description": "{{ description }}",
-    "headline": "{{ title }}",
+    "headline": "{{ fulltitle }}",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "{{ icon }}" }

@@ -54,7 +54,7 @@ As a core part of the Department of Computer Science at the University of Centra
 {% include section.html dark=true %}
 
 <!-- {% capture col1 %}
-WE ARE UNBOULDED AI LAB~
+WE ARE LOOPLEAP LAB
 {% endcapture %} -->
 
 <!-- {% capture col2 %}

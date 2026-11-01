@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+<rect width="128" height="128" rx="28" fill="#001a57"/>
+<g transform="translate(0 16)">
+<defs>
+  <linearGradient id="loopleap-gradient" x1="16" y1="80" x2="112" y2="20" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#7dd3fc"/>
+    <stop offset="1" stop-color="#5eead4"/>
+  </linearGradient>
+</defs>
+<g fill="none" stroke="url(#loopleap-gradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M 98 30 C 79 12 51 11 32 26 C 10 44 17 75 43 80 C 68 85 88 67 100 48 L 112 28"/>
+  <path d="M 91 30 L 112 28 L 111 49"/>
+</g>
+</g>
+</svg>

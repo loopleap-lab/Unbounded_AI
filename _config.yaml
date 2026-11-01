@@ -1,8 +1,8 @@
 # site properties and page defaults
-title: Unbounded AI
-subtitle: Unbounded AI lab
-logo-text: Unbounded AI
-description: Pushing the boundaries of AI by addressing core challenges in privacy, security, scalability, and efficiency.
+title: LoopLeap Lab
+subtitle: AI for science and health
+logo-text: LoopLeap Lab
+description: LoopLeap Lab advances foundational AI through interdisciplinary science and engineering, with applications in scientific discovery and healthcare.
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false
@@ -12,7 +12,7 @@ links:
   email: qian.lou@ucf.edu
   orcid: 0000-0001-5462-2567
   google-scholar: SBYgXLoAAAAJ
-  github: UCF-ML-Research
+  github: loopleap-lab
   twitter: UboundedAI
   youtube: "@Unbounded_AI_UCF"
 

@@ -1,9 +1,9 @@
 ---
 ---
 
-# UCF-ML-Research's Website
+# Foundational AI. Useful innovation.
 
-At Unbounded AI Lab, we recognize that today's artificial intelligence is fundamentally limited—constrained by critical challenges in privacy, security, performance, and reliability.
+LoopLeap Lab advances foundational AI through interdisciplinary science and engineering. We build secure, efficient, and reliable AI systems to support scientific discovery and improve health.
 
 
 
@@ -13,7 +13,7 @@ At Unbounded AI Lab, we recognize that today's artificial intelligence is fundam
 
 {% capture text %}
 
-Our mission is to break these boundaries. We conduct pioneering research to build AI that is truly secure, scalable, and verifiable, unleashing its full potential for the future.
+We connect AI foundations, systems, and domain expertise to turn new ideas into useful tools. Our research addresses privacy, security, scalability, and efficiency so AI can work across disciplines and real-world settings.
 
 {%
   include button.html

@@ -1,10 +1,9 @@
-- title: Example 
-  subtitle: a subtitle
+- title: Open research software
+  subtitle: LoopLeap Lab
   group: featured
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  image: images/code-photo.jpg
+  link: https://github.com/loopleap-lab
+  description: Explore our public code and research projects on GitHub.
   tags:
-    - resource
+    - open-source
 

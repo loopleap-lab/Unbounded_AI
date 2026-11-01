@@ -3,7 +3,7 @@
 
 $logo-big: 80px;
 $logo: 40px;
-$big-padding: 100px;
+$big-padding: 64px;
 $collapse: 700px;
 $sticky: true;
 
@@ -145,6 +145,7 @@ header[data-big] {
   .home {
     flex-direction: column;
     flex-grow: 0;
+    align-items: center;
   }
 
   .logo {
